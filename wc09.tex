@@ -42,7 +42,7 @@
 
 \begin{questions}
   
-\titledquestion{Let it cook}
+\titledquestion{And suddenly its tractable}
       A boolean variable $x$ is a variable that can have two values, \textbf{True} (represented as $1$) or \textbf{False} (represented as $0$). A boolean literal is either a boolean variable or its complement, if $x$ is a boolean variable, then the literals are $x$ and $\neg x$. A boolean formula is a formula consisting of boolean variables and logical connectives ($\land$, $\lor$, $\neg$). A formula is said to be in \href{https://en.wikipedia.org/wiki/Conjunctive_normal_form}{conjunctive normal form} if it contains clauses which is a series of literals connected by logical disjunction $\lor$ and those clauses are connected by logical conjunction. A formula is said to be in $N$-Conjunctive Normal Form or $N$CNF for short if each clause contains at most three literals. An example of a formula in $2$CNF can be, $\phi = (x \lor y) \land (\neg y \lor \neg x) \land (z \lor \neg y) \land (x)$. The satisfying assignment to $\phi$ is a valid truth assignment to literals of $\phi$ such that $\phi$ evaluates to to \textbf{True} (1). If there exists a satisfying assignment of $\phi$ then $\phi$ is said to be satisfiable.
        
       We have seen in this course that the famous problem $\textsc{3-sat}$ is in $\classNP$. Not only that we know $\textsc{3-sat}$ is in $\NPC$, so we are not gonna find a polynomial time algorithm for $\textsc{3-sat}$ unless $\classP = \classNP$. But can we find better efficient algorithm of many a restricted version of this problem? 
